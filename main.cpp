@@ -22,6 +22,8 @@ void arr(int (*val)[3]) {  // function using matrix pointer variable named *val 
   cout << endl << *(*val + 1);       // points to val[0] + 1 = val[2] = 16
   cout << endl << *(*(val + 1) + 2); // val + 1 = sec row, 2 means 0, 1st, 2nd column = 99
   cout << endl << *(*val) + 1;       // points to val[0] value, then adds 1 = 34
+  cout << endl << "The notation val[1][2] = " << val[1][2] << endl;
+  cout << "This is valid because it is still locating the value found in row 2, index 2, but I am not sure why this works. *val is declared a pointer for the martix that gets entered into the function (nums).";
 
   return;
 }
